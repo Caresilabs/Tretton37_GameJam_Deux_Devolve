@@ -67,7 +67,9 @@ public class PlayerMovement : MonoBehaviour
         // Apply a force that attempts to reach our target velocity
         Vector2 velocityChange = (targetVelocity - velocity);
         velocityChange.x = Mathf.Clamp(velocityChange.x, -MaxVelocityChange, MaxVelocityChange);
-        velocityChange.y = Mathf.Clamp(velocityChange.y, -MaxVelocityChange, MaxVelocityChange);
+
+
+        velocityChange.y = Mathf.Clamp(velocityChange.y, -MaxVelocityChange * 0.75f, MaxVelocityChange * 0.75f);
         HeadPart.AddForce(velocityChange, ForceMode2D.Force);
 
         if (Math.Abs(HeadPart.velocity.x) > MaxVelocity)

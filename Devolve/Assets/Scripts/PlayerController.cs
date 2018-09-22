@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -31,8 +32,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var avgPoint = currentParts.Average(x => x.transform.position.x);
-        head.SpriteRenderer.flipX = avgPoint > head.transform.position.x;
+        if (IsOnlyHead)
+        {
+            head.SpriteRenderer.flipX = head.Body.velocity.x < -0.1f;
+        }
+        else
+        {
+            var avgPoint = currentParts.Average(x => x.transform.position.x);
+            head.SpriteRenderer.flipX = avgPoint > head.transform.position.x;
+        }
     }
 
     public void Split()
@@ -40,8 +48,7 @@ public class PlayerController : MonoBehaviour
         if (!IsOnlyHead)
         {
             PartController part = currentParts.Pop();
-            DistanceJoint2D joint = part.Joint;
-            joint.enabled = false;
+            part.Split();
             currentParts.Peek().Joint.enabled = false;
         }
     }
@@ -56,6 +63,12 @@ public class PlayerController : MonoBehaviour
         return false;
     }
 
+    internal void Merge(PartController source, PartController toMerge)
+    {
+        if (source != currentParts.Peek())
+            return;
 
-
+        currentParts.Peek().Merge(toMerge);
+        currentParts.Push(toMerge);
+    }
 }
