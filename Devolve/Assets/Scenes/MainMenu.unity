@@ -156,13 +156,13 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 81557157}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 1, y: -1}
+  m_EffectDistance: {x: 0.5, y: -0.5}
   m_UseGraphicAlpha: 1
 --- !u!114 &81557160
 MonoBehaviour:
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9433962, g: 0.8997864, b: 0.28924885, a: 1}
+  m_Color: {r: 1, g: 0.7137255, b: 0.22352943, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -365,12 +365,12 @@ Prefab:
     - target: {fileID: 231638752639550244, guid: 67833c37bc6b6424099dbdbb3d16f83b,
         type: 2}
       propertyPath: m_ConnectedAnchor.x
-      value: 7.91
+      value: 8.129999
       objectReference: {fileID: 0}
     - target: {fileID: 231638752639550244, guid: 67833c37bc6b6424099dbdbb3d16f83b,
         type: 2}
       propertyPath: m_ConnectedAnchor.y
-      value: 3.83
+      value: 2.1999998
       objectReference: {fileID: 0}
     - target: {fileID: 114008284836962980, guid: 67833c37bc6b6424099dbdbb3d16f83b,
         type: 2}
@@ -380,7 +380,7 @@ Prefab:
     - target: {fileID: 114693099914160990, guid: 67833c37bc6b6424099dbdbb3d16f83b,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 231638752639550244, guid: 67833c37bc6b6424099dbdbb3d16f83b,
         type: 2}
@@ -390,6 +390,30 @@ Prefab:
     - target: {fileID: 1109411681699922, guid: 67833c37bc6b6424099dbdbb3d16f83b, type: 2}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 212904006990539994, guid: 67833c37bc6b6424099dbdbb3d16f83b,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212904006990539994, guid: 67833c37bc6b6424099dbdbb3d16f83b,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212904006990539994, guid: 67833c37bc6b6424099dbdbb3d16f83b,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329047362896626, guid: 67833c37bc6b6424099dbdbb3d16f83b, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 231638752639550244, guid: 67833c37bc6b6424099dbdbb3d16f83b,
+        type: 2}
+      propertyPath: m_AutoConfigureDistance
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67833c37bc6b6424099dbdbb3d16f83b, type: 2}
@@ -500,6 +524,32 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212959856256574350, guid: 2ddf49c6712c0b94fa955b32514b0e79,
+        type: 2}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612093840413602, guid: 2ddf49c6712c0b94fa955b32514b0e79, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 27.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612093840413602, guid: 2ddf49c6712c0b94fa955b32514b0e79, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114346784272524168, guid: 2ddf49c6712c0b94fa955b32514b0e79,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491880613968534, guid: 2ddf49c6712c0b94fa955b32514b0e79, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491880613968534, guid: 2ddf49c6712c0b94fa955b32514b0e79, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.66
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ddf49c6712c0b94fa955b32514b0e79, type: 2}
   m_IsPrefabAsset: 0
@@ -535,8 +585,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 132.2, y: 9.5}
-  m_SizeDelta: {x: 237.39001, y: 30}
+  m_AnchoredPosition: {x: 142.9, y: 16.9}
+  m_SizeDelta: {x: 269.9, y: 40.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1038738507
 MonoBehaviour:
@@ -570,7 +620,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Created By: Caresi Labs - Simon Both\xE9n"
+  m_Text: "Created By: Caresi Labs - Simon Both\xE9n\nArt By: Elastiskalinjen - Sebastian
+    Lind"
 --- !u!222 &1038738508
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -666,6 +717,7 @@ GameObject:
   - component: {fileID: 1284035368}
   - component: {fileID: 1284035367}
   - component: {fileID: 1284035366}
+  - component: {fileID: 1284035369}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -690,7 +742,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -134}
-  m_SizeDelta: {x: 359.54, y: 60.18}
+  m_SizeDelta: {x: 418.73, y: 60.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1284035366
 MonoBehaviour:
@@ -711,8 +763,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.39215687}
-    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.21176471}
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.2901961}
+    m_HighlightedColor: {r: 1, g: 0.7137255, b: 0.22352941, a: 0.21176471}
     m_PressedColor: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 0.50980395}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -778,6 +830,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1284035364}
   m_CullTransparentMesh: 0
+--- !u!114 &1284035369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1284035364}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.7264151, g: 0.03769135, b: 0.03769135, a: 1}
+  m_EffectDistance: {x: 8.46, y: -8.4}
+  m_UseGraphicAlpha: 0
 --- !u!1 &1333859460
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +1014,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -235}
-  m_SizeDelta: {x: 359.54, y: 60.18}
+  m_SizeDelta: {x: 418.73, y: 60.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1335877403
 MonoBehaviour:
@@ -969,8 +1035,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.39215687}
-    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.21176471}
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.2901961}
+    m_HighlightedColor: {r: 1, g: 0.7137255, b: 0.22352941, a: 0.21176471}
     m_PressedColor: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 0.50980395}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
